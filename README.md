@@ -1,9 +1,7 @@
 # FHE Decision Tree Train & Predict
 ## About the repo
-This repository utilizes Fully Homomorphic Encryption (FHE) to enable machine
-learning over encrypted data. In this code we implement tree based methods (e.g., boosting, random forests), and
-propose a new privacy-preserving solution to training and prediction for trees, according to
-[this paper](https://eprint.iacr.org/2021/768.pdf).
+This repository utilizes Fully Homomorphic Encryption (FHE) to enable machine learning over encrypted data. In this code we implement a new privacy-preserving solution to training and prediction for trees, proposed by A. Akavia, M. Leibovich, Y. S. Resheff,
+R. Ron, M. Shahar, and M. Vald [1].
 
 ###### The code uses the CKKS implementation by [SEAL](https://github.com/microsoft/SEAL), an open source library provided by Microsoft.
 
@@ -56,3 +54,12 @@ docker build -t <image name> .
 docker run <image name>
 docker run <image name> ctest -C
 ```
+
+### Acknowledgment
+We would like to thank all the code contributors to this project:\
+Max Leibovich, github: https://github.com/smerte  
+Omer Sadeh, github: https://github.com/Omer-Sadeh  
+Boaz Sapir, github: https://github.com/boazsapir  
+Margarita Vald, email: margarita.vald@cs.tau.ac.il
+
+[1] A. Akavia, M. Leibovich, Y. S. Resheff, R. Ron, M. Shahar, and M. Vald. 2022. Privacy-Preserving Decision Trees Training and Prediction. ACM Trans. Priv. Secur. 25, 3, Article 24 (August 2022), 30 pages. https://doi.org/10.1145/3517197
